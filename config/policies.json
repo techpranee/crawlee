@@ -1,0 +1,20 @@
+{
+  "default": {
+    "maxRPS": 1,
+    "delayMs": 1000,
+    "jitter": 250,
+    "proxyPool": []
+  },
+  "linkedin.com": {
+    "maxRPS": 0.2,
+    "delayMs": 5000,
+    "jitter": 750,
+    "proxyPool": ["residential"]
+  },
+  "apollo.io": {
+    "maxRPS": 0.5,
+    "delayMs": 2000,
+    "jitter": 500,
+    "proxyPool": ["datacenter"]
+  }
+}

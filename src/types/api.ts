@@ -3,7 +3,7 @@ import { z } from 'zod';
 // Extended enums for frontend compatibility
 const sourceEnum = z.enum(['mca', 'linkedin', 'apollo', 'zoom', 'custom']);
 const strategyEnum = z.enum(['playwright', 'cheerio', 'auto']);
-const authEnum = z.enum(['apollo', 'zoom']);
+const authEnum = z.enum(['apollo', 'zoom', 'linkedin']);
 const modeEnum = z.enum(['crawlee', 'firecrawl', 'hybrid']);
 const outputEnum = z.enum(['database', 'csv', 'vector']);
 const complexityEnum = z.enum(['easy', 'medium', 'advanced']);

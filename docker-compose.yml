@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  crawlee-server:
+    build: .
+    depends_on:
+      mongo:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 3011
+      MONGO_URL: mongodb://mongo:27017/crawlee
+      AGENDA_COLLECTION: jobs
+      MAX_CONCURRENCY: 2
+      NAV_TIMEOUT_MS: 45000
+      REQUEST_TIMEOUT_MS: 45000
+      CRAWLEE_STORAGE_DIR: /usr/src/app/storage
+      EXPORT_DIR: /usr/src/app/exports
+    volumes:
+      - crawlee_storage:/usr/src/app/storage
+      - exports:/usr/src/app/exports
+    ports:
+      - "3011:3011"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3011/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  mongo_data:
+  crawlee_storage:
+  exports:
