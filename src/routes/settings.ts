@@ -19,6 +19,8 @@ router.get('/', async (req, res, next) => {
       linkedinCookie: tenant.linkedinCookie ? '***SET***' : null,
       apolloCookie: tenant.apolloCookie ? '***SET***' : null,
       zoomCookie: tenant.zoomCookie ? '***SET***' : null,
+      twentyCrmApiKey: tenant.twentyCrmApiKey ? '***SET***' : null,
+      twentyCrmApiBaseUrl: tenant.twentyCrmApiBaseUrl || null,
     });
   } catch (error) {
     logger.error('Failed to fetch settings');
@@ -30,7 +32,7 @@ router.get('/', async (req, res, next) => {
 router.patch('/', async (req, res, next) => {
   try {
     const tenant = res.locals.tenant as TenantDocument;
-    const { linkedinCookie, apolloCookie, zoomCookie } = req.body;
+    const { linkedinCookie, apolloCookie, zoomCookie, twentyCrmApiKey, twentyCrmApiBaseUrl } = req.body;
 
     if (!tenant) {
       return res.status(404).json({ error: 'Tenant not found' });
@@ -46,6 +48,12 @@ router.patch('/', async (req, res, next) => {
     }
     if (zoomCookie !== undefined) {
       updateFields.zoomCookie = zoomCookie || undefined;
+    }
+    if (twentyCrmApiKey !== undefined) {
+      updateFields.twentyCrmApiKey = twentyCrmApiKey || undefined;
+    }
+    if (twentyCrmApiBaseUrl !== undefined) {
+      updateFields.twentyCrmApiBaseUrl = twentyCrmApiBaseUrl || undefined;
     }
 
     const tenantDoc = await TenantModel.findOneAndUpdate(
@@ -65,6 +73,8 @@ router.patch('/', async (req, res, next) => {
       linkedinCookie: tenantDoc.linkedinCookie ? '***SET***' : null,
       apolloCookie: tenantDoc.apolloCookie ? '***SET***' : null,
       zoomCookie: tenantDoc.zoomCookie ? '***SET***' : null,
+      twentyCrmApiKey: tenantDoc.twentyCrmApiKey ? '***SET***' : null,
+      twentyCrmApiBaseUrl: tenantDoc.twentyCrmApiBaseUrl || null,
     });
   } catch (error) {
     logger.error('Failed to update settings');

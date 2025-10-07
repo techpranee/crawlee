@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import { Router, type Request } from 'express';
 import { z } from 'zod';
 import { Types } from 'mongoose';
 import { Parser } from 'json2csv';
@@ -12,6 +12,21 @@ import { getAgenda } from '../jobs/agenda';
 import { logger } from '../utils/logger';
 
 const router = Router();
+
+// Helper to extract tenant from request
+type TenantAwareRequest = Request & { tenantId?: string; tenant?: TenantDocument };
+
+function getTenant(req: Request): TenantDocument | undefined {
+  return (req as TenantAwareRequest).tenant;
+}
+
+function getTenantOrThrow(req: Request): TenantDocument {
+  const tenant = getTenant(req);
+  if (!tenant) {
+    throw new Error('Tenant not found in request context');
+  }
+  return tenant;
+}
 
 // Create LinkedIn campaign schema
 const createLinkedInCampaignSchema = z.object({
@@ -69,7 +84,7 @@ const createLinkedInCampaignSchema = z.object({
 // POST /api/linkedin/campaigns - Create new LinkedIn scraping campaign
 router.post('/campaigns', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const body = createLinkedInCampaignSchema.parse(req.body);
 
     // Generate description based on mode
@@ -169,7 +184,7 @@ router.post('/campaigns', async (req, res, next) => {
 // GET /api/linkedin/campaigns - List LinkedIn campaigns
 router.get('/campaigns', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const page = Math.max(1, parseInt(req.query.page as string) || 1);
     const limit = Math.min(100, Math.max(1, parseInt(req.query.limit as string) || 20));
     const skip = (page - 1) * limit;
@@ -240,7 +255,7 @@ router.get('/campaigns', async (req, res, next) => {
 // GET /api/linkedin/campaigns/:id - Get campaign details
 router.get('/campaigns/:id', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
 
     if (!Types.ObjectId.isValid(id)) {
@@ -306,7 +321,7 @@ router.get('/campaigns/:id', async (req, res, next) => {
 // GET /api/linkedin/campaigns/:id/leads - Get campaign leads
 router.get('/campaigns/:id/leads', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
 
     if (!Types.ObjectId.isValid(id)) {
@@ -371,7 +386,7 @@ router.get('/campaigns/:id/leads', async (req, res, next) => {
 // GET /api/linkedin/campaigns/:id/export - Export campaign leads as CSV
 router.get('/campaigns/:id/export', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
     const format = (req.query.format as string) || 'csv';
 
@@ -463,7 +478,7 @@ router.get('/campaigns/:id/export', async (req, res, next) => {
 // PATCH /api/linkedin/campaigns/:id - Update campaign (pause/resume)
 router.patch('/campaigns/:id', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
     const { status } = req.body;
 
@@ -503,7 +518,7 @@ router.patch('/campaigns/:id', async (req, res, next) => {
 // DELETE /api/linkedin/campaigns/:id - Delete campaign and its leads
 router.delete('/campaigns/:id', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
 
     if (!Types.ObjectId.isValid(id)) {
@@ -558,7 +573,7 @@ const createLinkedInCompanyCampaignSchema = z.object({
 // POST /api/linkedin/companies/campaigns - Create new LinkedIn company scraping campaign
 router.post('/companies/campaigns', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const body = createLinkedInCompanyCampaignSchema.parse(req.body);
 
     // Generate description if not provided
@@ -629,7 +644,7 @@ router.post('/companies/campaigns', async (req, res, next) => {
 // GET /api/linkedin/companies/campaigns - List company campaigns
 router.get('/companies/campaigns', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { limit = 20, skip = 0 } = req.query;
 
     const campaigns = await CampaignModel.find({
@@ -671,7 +686,7 @@ router.get('/companies/campaigns', async (req, res, next) => {
 // GET /api/linkedin/companies/campaigns/:id - Get company campaign details
 router.get('/companies/campaigns/:id', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
 
     if (!Types.ObjectId.isValid(id)) {
@@ -718,7 +733,7 @@ router.get('/companies/campaigns/:id', async (req, res, next) => {
 // GET /api/linkedin/companies/campaigns/:id/companies - Get companies for a campaign
 router.get('/companies/campaigns/:id/companies', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
     const { limit = 50, skip = 0 } = req.query;
 
@@ -777,7 +792,7 @@ router.get('/companies/campaigns/:id/companies', async (req, res, next) => {
 // GET /api/linkedin/companies/campaigns/:id/export - Export companies as CSV
 router.get('/companies/campaigns/:id/export', async (req, res, next) => {
   try {
-    const tenant = res.locals.tenant as TenantDocument;
+    const tenant = getTenantOrThrow(req);
     const { id } = req.params;
 
     if (!Types.ObjectId.isValid(id)) {

@@ -10,6 +10,7 @@ const tenantSchema = new Schema(
     zoomCookie: { type: String },
     linkedinCookie: { type: String },
     twentyCrmApiKey: { type: String },
+    twentyCrmApiBaseUrl: { type: String },
   },
   { timestamps: true },
 );
