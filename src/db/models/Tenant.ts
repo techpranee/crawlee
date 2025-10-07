@@ -9,6 +9,7 @@ const tenantSchema = new Schema(
     apolloCookie: { type: String },
     zoomCookie: { type: String },
     linkedinCookie: { type: String },
+    twentyCrmApiKey: { type: String },
   },
   { timestamps: true },
 );

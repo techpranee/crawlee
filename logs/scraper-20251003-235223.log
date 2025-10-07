@@ -1,0 +1,566 @@
+🚀 Starting LinkedIn Hiring Posts Scraper
+📊 Config: Max 200 posts, Query: "hiring", Location: "India"
+✓ Connected to MongoDB
+✓ Created campaign: 68e0146074fa090cd2633ecf
+🌐 Launching Chrome with dedicated profile...
+📁 Profile: /Users/mohanpraneeth/Desktop/Coding/crawlee/.playwright-chrome-profile
+
+⚠️  IMPORTANT: If this is your first run, Chrome will open.
+   You need to manually log into LinkedIn in the browser window.
+   After logging in, the script will continue automatically.
+
+✓ Browser ready
+🔍 Navigating to search: https://www.linkedin.com/search/results/content/?keywords=hiring&datePosted="past-week"&sortBy="date_posted"&contentType="jobs"&geoUrn=India
+📄 Found 5 posts on page
+
+📝 Processing post 1/200
+   Author: undefined
+   Text preview: Amanda Johnson, SHRM-CP is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (1 total)
+
+📝 Processing post 2/200
+   Author: undefined
+   Text preview: Lucy Wand is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (2 total)
+      Jobs: Data Solution Architect, Consultant
+
+📝 Processing post 3/200
+   Author: undefined
+   Text preview: 🚀 We’re Hiring – Product Owner 🚀
+📍 Location: Toronto, ON (Hybrid – 1 day onsite per week)
+ 📄 Con...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (3 total)
+      Jobs: Product Owner
+      Locations: Toronto, ON
+
+📝 Processing post 4/200
+   Author: undefined
+   Text preview: George Whitaker is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (4 total)
+      Jobs: Consulting Manager, Sr Workday Integration Consultant
+
+📝 Processing post 5/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (5 total)
+
+📜 Scrolling to load more posts...
+📄 Found 17 posts on page
+
+📝 Processing post 6/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring for a Executive Assistant Finance at Kimirica…...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (6 total)
+      Jobs: Executive Assistant Finance
+
+📝 Processing post 7/200
+   Author: undefined
+   Text preview: Jyoti Nathany is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (7 total)
+
+📝 Processing post 8/200
+   Author: undefined
+   Text preview: Anirudh Vemula, PE is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (8 total)
+      Jobs: Principal Architect, Professional Engineer
+
+📝 Processing post 9/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (9 total)
+
+📝 Processing post 10/200
+   Author: undefined
+   Text preview: 🔧 We’re Hiring: Mechanical Engineer – Oshkosh, WI 🔧
+Position: Mechanical Engineer
+Location: On-sit...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (10 total)
+      Jobs: Mechanical Engineer
+      Locations: Oshkosh, Wisconsin
+
+📝 Processing post 11/200
+   Author: undefined
+   Text preview: We are 
+hashtag
+#hiring at The Horeca Store America!
+
+If you are looking for a new opportunity from ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (11 total)
+      Jobs: Telesales Specialist
+      Locations: USA
+
+📝 Processing post 12/200
+   Author: undefined
+   Text preview: We are still 
+hashtag
+#hiring!!! Service Delivery Manager - Bradenton, FL (100% Onsite) Know anyone ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (12 total)
+      Jobs: Service Delivery Manager
+      Locations: Bradenton, FL
+
+📝 Processing post 13/200
+   Author: undefined
+   Text preview: Vishnu S is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (13 total)
+
+📝 Processing post 14/200
+   Author: undefined
+   Text preview: Rashmi Singh is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (14 total)
+
+📝 Processing post 15/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring for a PR and Marketing Intern at Pehchaan The Street School (Trust)… 
+
+Location...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (15 total)
+      Jobs: PR and Marketing Intern
+      Locations: Remote
+
+📜 Scrolling to load more posts...
+📄 Found 23 posts on page
+
+📝 Processing post 16/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (16 total)
+
+📜 Scrolling to load more posts...
+📄 Found 29 posts on page
+
+📝 Processing post 17/200
+   Author: undefined
+   Text preview: hashtag
+#MUFG 
+hashtag
+#Hiring 
+hashtag
+#Opportunities...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (17 total)
+
+📝 Processing post 18/200
+   Author: undefined
+   Text preview: We are actively 
+hashtag
+#hiring! Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (18 total)
+
+📝 Processing post 19/200
+   Author: undefined
+   Text preview: hashtag
+#Hiring for 
+hashtag
+#Software_Engineer 
+check the post below...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (19 total)
+      Jobs: Hiring, Software_Engineer
+
+📝 Processing post 20/200
+   Author: undefined
+   Text preview: 🚀 We’re Hiring! 🚀
+Pronix Inc. is looking for Workday Integration Engineer 
+Locations: Charlotte NC...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (20 total)
+      Jobs: Workday Integration Engineer
+      Locations: Charlotte NC, Addison TX, Kennesaw GA
+
+📝 Processing post 21/200
+   Author: undefined
+   Text preview: 🚀 We’re Hiring: Business Development Executive (On-Field Medical Device Sales)
+
+Location: Bangalore...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (21 total)
+      Jobs: Business Development Executive (On-Field Medical Device Sales)
+      Locations: Bangalore
+
+📝 Processing post 22/200
+   Author: undefined
+   Text preview: We're Hiring: Business Quality Tester (2 Openings!)
+Location: Seattle, WA (50% Onsite)
+Duration: 6+ ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (22 total)
+      Jobs: Business Quality Tester
+      Locations: Seattle, WA
+
+📜 Scrolling to load more posts...
+📄 Found 35 posts on page
+
+📝 Processing post 23/200
+   Author: undefined
+   Text preview: We are currently seeking a Product Owner for a direct client in Tucson, AZ. If you are based in Ariz...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (23 total)
+      Jobs: Product Owner
+      Locations: Tucson, AZ
+
+📝 Processing post 24/200
+   Author: undefined
+   Text preview: 🚀 Hiring | Director – E-commerce Category (CTC up to ₹90 LPA) 🚀
+
+Worko is hiring for one of our pa...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (24 total)
+      Jobs: Director – E-commerce Category
+      Locations: Bangalore
+
+📝 Processing post 25/200
+   Author: undefined
+   Text preview: Marsh McLennan is hiring a Manager - Sustainable Investment Analyst. 
+
+Shape ESG strategies and make...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (25 total)
+      Jobs: Manager - Sustainable Investment Analyst
+
+📝 Processing post 26/200
+   Author: undefined
+   Text preview: Hello Folks ,
+We are hiring for one of the South African leading Edtech company in Mumbai/Delhi.
+
+Ki...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (26 total)
+      Jobs: Sales, Corporate Sales
+      Locations: Mumbai, Delhi
+
+📝 Processing post 27/200
+   Author: undefined
+   Text preview: https://lnkd.in/gEVxZRdf Rishabh Sharma is hiring...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (27 total)
+      Jobs: Hiring Manager
+
+📜 Scrolling to load more posts...
+📄 Found 41 posts on page
+
+📝 Processing post 28/200
+   Author: undefined
+   Text preview: #freightbroker #hiring #logisticsjobs #brokerage #jobsearch #jobopportunity #immediatejoining #logis...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (28 total)
+      Jobs: Freight Broker, Dispatcher, CMT
+
+📝 Processing post 29/200
+   Author: undefined
+   Text preview: hashtag
+#Hiring Sr. Lead Production Engineer | 15+ yrs in upstream oil & gas, production optimizatio...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (29 total)
+      Jobs: Senior Lead Production Engineer, Production Engineer
+
+📝 Processing post 30/200
+   Author: undefined
+   Text preview: Heal Aura is hiring...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (30 total)
+
+📝 Processing post 31/200
+   Author: undefined
+   Text preview: Deepak Peshwani is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (31 total)
+      Jobs: Process Lead (Accounts), Process Lead (Accounts)
+
+📜 Scrolling to load more posts...
+📄 Found 47 posts on page
+
+📝 Processing post 32/200
+   Author: undefined
+   Text preview: We are still 
+hashtag
+#hiring! Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (32 total)
+      Jobs: null
+      Locations: null
+
+📝 Processing post 33/200
+   Author: undefined
+   Text preview: Deepika T. is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (33 total)
+      Jobs: Engineering, Information technology, Supply chain
+
+📝 Processing post 34/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (34 total)
+
+📝 Processing post 35/200
+   Author: undefined
+   Text preview: Mahesh Kumar is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (35 total)
+      Locations: US, Canada
+
+📝 Processing post 36/200
+   Author: undefined
+   Text preview: We’re 
+hashtag
+#Hiring Engineers @ Jumbo 🚀
+
+At Jumbo, we’re building a one-of-a-kind gamified e-com...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (36 total)
+      Jobs: Frontend Engineer, Backend Engineer
+
+📝 Processing post 37/200
+   Author: undefined
+   Text preview: hashtag
+#hiring 
+hashtag
+#talentacquisition 
+hashtag
+#hogarthstudios...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (37 total)
+      Jobs: Talent Acquisition Professional
+
+📜 Scrolling to load more posts...
+📄 Found 53 posts on page
+
+📝 Processing post 38/200
+   Author: undefined
+   Text preview: We are still 
+hashtag
+#hiring! Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (38 total)
+
+📝 Processing post 39/200
+   Author: undefined
+   Text preview: Hi 
+hashtag
+#Everyone,
+ We are 
+hashtag
+#Hiring for 
+hashtag
+#Procurement Specialist to leading 
+has...
+   🤖 Extracting lead details with AI...
+   ❌ Database error: LinkedInLead validation failed: company: Cast to string failed for value "[ 'Belcan', 'Cognizant' ]" (type Array) at path "company"
+
+📝 Processing post 40/200
+   Author: undefined
+   Text preview: Smit Goswami is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (39 total)
+
+📝 Processing post 41/200
+   Author: undefined
+   Text preview: We're Hiring
+
+SAP S/4HANA P2P SME!
+Bring your expertise in Procure-to-Pay & S/4HANA to transform glo...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (40 total)
+      Jobs: SAP S/4HANA P2P SME, Procure-to-Pay & S/4HANA
+      Locations: Germany
+
+📝 Processing post 42/200
+   Author: undefined
+   Text preview: We are still 
+hashtag
+#hiring! Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (41 total)
+
+📝 Processing post 43/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring for a Renewal Retention Officer at Star Health and Allied Insurance Co. Ltd#Mum...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (42 total)
+      Jobs: Renewal Retention Officer
+      Locations: Mumbai
+
+📜 Scrolling to load more posts...
+📄 Found 62 posts on page
+
+📝 Processing post 44/200
+   Author: undefined
+   Text preview: We are actively 
+hashtag
+#hiring! Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (43 total)
+
+📝 Processing post 45/200
+   Author: undefined
+   Text preview: SynthWeb is Hiring!! Know anyone who might be interested? Please recommend....
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (44 total)
+
+📝 Processing post 46/200
+   Author: undefined
+   Text preview: Rakshitha B S is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (45 total)
+      Jobs: Lead HR Advisor
+
+📝 Processing post 47/200
+   Author: undefined
+   Text preview: Kirti Bhambure is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (46 total)
+
+📝 Processing post 48/200
+   Author: undefined
+   Text preview: Deva Kumar Balu is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (47 total)
+      Jobs: Java Developer, Data Engineer, Teradata, Datastage
+
+📝 Processing post 49/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (48 total)
+      Jobs: Technical Publications Manager
+
+📝 Processing post 50/200
+   Author: undefined
+   Text preview: Daniela Yosef Koch is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (49 total)
+      Jobs: Senior Manager - Business Development, Homeland Security
+
+📝 Processing post 51/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (50 total)
+
+📜 Scrolling to load more posts...
+📄 Found 68 posts on page
+
+📝 Processing post 52/200
+   Author: undefined
+   Text preview: We are 
+hashtag
+#hiring! Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (51 total)
+
+📝 Processing post 53/200
+   Author: undefined
+   Text preview: We are hiring 
+hashtag
+#navalarchitect 
+hashtag
+#alang...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (52 total)
+
+📝 Processing post 54/200
+   Author: undefined
+   Text preview: Brooke Ambler is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (53 total)
+      Jobs: undefined
+
+📝 Processing post 55/200
+   Author: undefined
+   Text preview: Right Advisors Private Limited is hiring for the role of Executive Assistant in Delhi NCR.
+
+
+Follow ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (54 total)
+      Jobs: Executive Assistant
+      Locations: Delhi NCR
+
+📝 Processing post 56/200
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested? 👋😊...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (55 total)
+      Jobs: #hiring
+
+📜 Scrolling to load more posts...
+📄 Found 74 posts on page
+
+📜 Scrolling to load more posts...
+⚠️ No more posts to load
+
+✅ Scraping completed!
+📊 Summary:
+   Posts processed: 56
+   Leads extracted: 55
+   Errors: 1
+   Campaign ID: 68e0146074fa090cd2633ecf

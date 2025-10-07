@@ -1,6 +1,6 @@
 # Crawlee Server
 
-Production-ready Crawlee scraping server with asynchronous campaign management, MongoDB storage, Agenda-powered job orchestration, and CSV export utilities. Deploy locally or through Docker Compose / Portainer.
+Production-ready Crawlee scraping server with asynchronous campaign management, MongoDB storage, Agenda-powered job orchestration, and CSV export utilities. **Now featuring a complete LinkedIn hiring posts scraper with dual-mode support (search & seed URLs).**
 
 ```
 +---------------+     +-------------------+     +---------------------+
@@ -14,6 +14,68 @@ Production-ready Crawlee scraping server with asynchronous campaign management, 
 +----------------+     +-----------------+     +-----------------------+
 ```
 
+## 🆕 LinkedIn Scraper - Now Complete!
+
+**Dual-mode LinkedIn scraping system for hiring posts:**
+
+### Search Mode
+Search LinkedIn by keywords, time period, and location:
+```bash
+# Create campaign via API
+curl -X POST http://localhost:3011/api/linkedin/campaigns \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: YOUR_KEY" \
+  -d '{
+    "name": "AI Engineers Q4 2025",
+    "mode": "search",
+    "roles": "AI engineer, machine learning, hiring",
+    "period": "past week",
+    "location": "India",
+    "limit": 50
+  }'
+
+# Run scraper
+node scripts/linkedin-hiring-runner.js --campaignId=<ID>
+```
+
+### Seed URL Mode
+Scrape from specific profiles or posts:
+```bash
+# Create campaign with seed URLs
+curl -X POST http://localhost:3011/api/linkedin/campaigns \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: YOUR_KEY" \
+  -d '{
+    "name": "Tech CEOs Hiring Posts",
+    "mode": "seedUrls",
+    "seedUrls": [
+      "https://www.linkedin.com/in/sundarpichai/recent-activity/all/",
+      "https://www.linkedin.com/feed/update/urn:li:activity:7379929021188476928/"
+    ],
+    "summary": "Tracking hiring from tech leaders",
+    "limit": 30
+  }'
+
+# Run scraper
+node scripts/linkedin-hiring-runner.js --campaignId=<ID>
+```
+
+**Features:**
+- ✅ AI-powered lead extraction (Ollama)
+- ✅ Human-like scraping behavior
+- ✅ Rate limit detection
+- ✅ Persistent Chrome profile
+- ✅ Profile feed scraping
+- ✅ Single post scraping
+- ✅ Correct post URL extraction
+- ✅ Advanced filtering & sorting UI
+
+**Quick Start**: See [docs/QUICK_START.md](./docs/QUICK_START.md)  
+**Testing Guide**: See [docs/TESTING_GUIDE_COMPLETE.md](./docs/TESTING_GUIDE_COMPLETE.md)  
+**Implementation Details**: See [docs/IMPLEMENTATION_COMPLETE.md](./docs/IMPLEMENTATION_COMPLETE.md)
+
+---
+
 ## Features
 
 - Campaign lifecycle API with validation, basic auth (optional), rate limiting, and rollup stats.
@@ -23,6 +85,7 @@ Production-ready Crawlee scraping server with asynchronous campaign management, 
 - Docker Compose stack (MongoDB + server) ready for Portainer deployments.
 - Services layer for NL → filters, search adapters, selector assistance, email heuristics, and exporter utilities.
 - Multi-tenant API-key enforcement, idempotency keys, and Prometheus metrics (`/metrics`, `/ready`).
+- **NEW**: LinkedIn hiring posts scraper with dual-mode support (search & seed URLs).
 
 ## Getting Started
 
@@ -41,6 +104,21 @@ npm run dev
 ```
 
 The dev server listens on `http://localhost:3011`. Agenda jobs run in-process once MongoDB is reachable.
+
+### LinkedIn Scraper Setup
+
+```bash
+# Start backend
+npm run dev
+
+# In another terminal, run frontend
+cd ../insight-scrape-flow
+npm run dev
+
+# Create campaign via UI (http://localhost:8081) or API
+# Then run:
+node scripts/linkedin-hiring-runner.js --campaignId=<ID>
+```
 
 ### Production Build
 

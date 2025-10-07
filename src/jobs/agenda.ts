@@ -4,6 +4,7 @@ import { appConfig } from '../config/env';
 import { logger } from '../utils/logger';
 import { defineScrapeCrawlJob } from './handlers/scrapeCrawl';
 import { defineEnrichContactsJob } from './handlers/enrichContacts';
+import { defineLinkedInScrapingJob } from './handlers/linkedInScraping';
 import { setAgendaReady } from '../utils/metrics';
 
 let agendaInstance: Agenda | null = null;
@@ -29,6 +30,7 @@ export async function initAgenda(): Promise<Agenda> {
 
   defineScrapeCrawlJob(agenda);
   defineEnrichContactsJob(agenda);
+  defineLinkedInScrapingJob(agenda);
 
   await agenda.start();
   setAgendaReady(true);

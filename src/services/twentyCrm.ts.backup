@@ -1,0 +1,297 @@
+// src/services/twentyCrm.ts
+import axios, { AxiosInstance } from 'axios';
+import { logger } from '../utils/logger';
+
+// Twenty CRM REST API types      const createResponse = await this.client.post('/companies', companyData);
+      const newCompany = createResponse.data.data.createCompany;nterface Person {
+  id: string;
+  name: {
+    firstName: string;
+    lastName: string;
+  };
+  linkedinLink?: {
+    primaryLinkUrl: string;
+  };
+  companyId?: string;
+}
+
+interface Company {
+  id: string;
+  name: string;
+  domainName?: string;
+  deletedAt?: string | null;
+}
+
+interface Lead {
+  id: string;
+  name: string;
+  linkedinUrl?: string;
+  status?: string;
+  jobTitle?: string;
+  companyName?: string;
+}
+
+interface LinkedInLead {
+  name: string;
+  linkedinUrl: string;
+  companyName?: string;
+  title?: string;
+  location?: string;
+  postUrl?: string;
+  postTitle?: string;
+  companyUrl?: string;
+  companyIndustry?: string;
+  postedAt?: Date;
+}
+
+// REST API response types
+interface ApiResponse<T> {
+  data: T[];
+  totalCount?: number;
+}
+
+interface CreateResponse<T> {
+  data: T;
+}
+
+export class TwentyCrmService {
+  private client: AxiosInstance;
+  private readonly baseUrl = 'https://20.techpranee.com/rest';
+
+  constructor(apiKey: string) {
+    this.client = axios.create({
+      baseURL: this.baseUrl,
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      timeout: 30000, // 30 second timeout
+    });
+
+    // Add response interceptor for logging
+    this.client.interceptors.response.use(
+      (response) => response,
+      (error) => {
+        logger.error(`[TwentyCRM] API Error: ${error.response?.status} - ${error.response?.data?.message || error.message}`);
+        return Promise.reject(error);
+      }
+    );
+  }
+
+  /**
+   * Sync a single LinkedIn lead to Twenty CRM
+   */
+  async syncLinkedInLead(lead: LinkedInLead, tenantId: string): Promise<{ success: boolean; leadId?: string; personId?: string; companyId?: string; error?: string }> {
+    try {
+      logger.info(`[TwentyCRM] Syncing lead: ${lead.name} (${lead.linkedinUrl}) for tenant ${tenantId}`);
+
+      // 1. Find or create Company
+      let companyId: string | undefined;
+      if (lead.companyName) {
+        companyId = await this.findOrCreateCompany(lead.companyName, lead.companyUrl, lead.companyIndustry);
+      }
+
+      // 2. Find or create Person (unique by LinkedIn URL)
+      let personId: string;
+      const existingPerson = await this.findPersonByLinkedInUrl(lead.linkedinUrl);
+      if (existingPerson) {
+        personId = existingPerson.id;
+        logger.debug(`[TwentyCRM] Found existing person: ${lead.name} (${personId})`);
+      } else {
+        personId = await this.createPerson(lead, companyId);
+        logger.info(`[TwentyCRM] Created new person: ${lead.name} (${personId})`);
+      }
+
+      // Note: Lead creation is disabled due to missing field metadata in this workspace
+      // We successfully sync Person and Company data instead
+
+      logger.info(`[TwentyCRM] Successfully synced lead data: Person ${personId}${companyId ? `, Company ${companyId}` : ''}`);
+      return {
+        success: true,
+        personId,
+        companyId,
+        leadId: undefined // Leads not supported in this workspace
+      };
+
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      logger.error(`[TwentyCRM] Error syncing lead ${lead.name}: ${errorMessage}`);
+      return { success: false, error: errorMessage };
+    }
+  }
+
+  /**
+   * Find or create a company
+   */
+  private async findOrCreateCompany(companyName: string, companyUrl?: string, industry?: string): Promise<string> {
+    try {
+      // Try to find existing company by name (exclude deleted ones, case-insensitive)
+      const companiesResponse = await this.client.get('/companies');
+      const companies = companiesResponse.data.data.companies || [];
+      const existingCompany = companies.find((c: Company) =>
+        c.name?.toLowerCase() === companyName.toLowerCase() && !c.deletedAt
+      );
+
+      if (existingCompany) {
+        logger.debug(`[TwentyCRM] Found existing company: ${companyName} (${existingCompany.id})`);
+        return existingCompany.id;
+      }
+
+      // Create new company
+      const companyData = {
+        name: companyName,
+        domainName: companyUrl ? new URL(companyUrl).hostname.replace('www.', '') : undefined,
+      };
+
+      try {
+        const createResponse = await this.client.post('/companies', companyData);
+        const newCompany = createResponse.data.data;
+        logger.info(`[TwentyCRM] Created new company: ${companyName} (${newCompany.id})`);
+        return newCompany.id;
+      } catch (createError: any) {
+        // If we get a duplicate error, try searching again in case it was created by another process
+        if (createError.response?.data?.messages?.[0]?.includes('Duplicate Name')) {
+          logger.debug(`[TwentyCRM] Got duplicate error for ${companyName}, searching again...`);
+          const retryResponse = await this.client.get('/companies');
+          const retryCompanies = retryResponse.data.data.companies || [];
+          const foundCompany = retryCompanies.find((c: Company) =>
+            c.name?.toLowerCase() === companyName.toLowerCase() && !c.deletedAt
+          );
+          if (foundCompany) {
+            logger.debug(`[TwentyCRM] Found company on retry: ${companyName} (${foundCompany.id})`);
+            return foundCompany.id;
+          }
+        }
+        throw createError;
+      }
+
+    } catch (error) {
+      logger.error(`[TwentyCRM] Error with company ${companyName}: ${error}`);
+      throw error;
+    }
+  }
+
+  /**
+   * Find person by LinkedIn URL
+   */
+  private async findPersonByLinkedInUrl(linkedinUrl: string): Promise<Person | null> {
+    try {
+      const response = await this.client.get('/people');
+      const people = response.data.data.people || [];
+      const person = people.find((p: Person) => p.linkedinLink?.primaryLinkUrl === linkedinUrl);
+      return person || null;
+    } catch (error) {
+      logger.error(`[TwentyCRM] Error finding person by LinkedIn URL: ${error}`);
+      return null;
+    }
+  }
+
+  /**
+   * Create a new person
+   */
+  private async createPerson(lead: LinkedInLead, companyId?: string): Promise<string> {
+    // Parse name - assume format "First Last" or just use as first name
+    const nameParts = lead.name.trim().split(' ');
+    const firstName = nameParts[0] || 'Unknown';
+    const lastName = nameParts.slice(1).join(' ') || 'User';
+
+    const personData = {
+      name: {
+        firstName,
+        lastName,
+      },
+      // Note: linkedinLink uses primaryLinkUrl, not linkedinUrl
+      linkedinLink: {
+        primaryLinkUrl: lead.linkedinUrl,
+      },
+      // Note: Email field doesn't exist in this workspace's person object
+      // Note: Company relationship not supported in current workspace setup
+    };
+
+    const response = await this.client.post<CreateResponse<Person>>('/people', personData);
+    return response.data.data.id;
+  }
+
+  /**
+   * Batch sync multiple leads
+   */
+  async syncLinkedInLeads(leads: LinkedInLead[], tenantId: string): Promise<{
+    successful: number;
+    failed: number;
+    errors: Array<{ lead: LinkedInLead; error: string }>;
+  }> {
+    const results = {
+      successful: 0,
+      failed: 0,
+      errors: [] as Array<{ lead: LinkedInLead; error: string }>,
+    };
+
+    logger.info(`[TwentyCRM] Starting batch sync of ${leads.length} leads for tenant ${tenantId}`);
+
+    for (const lead of leads) {
+      const result = await this.syncLinkedInLead(lead, tenantId);
+      if (result.success) {
+        results.successful++;
+      } else {
+        results.failed++;
+        results.errors.push({ lead, error: result.error! });
+      }
+
+      // Small delay to avoid rate limiting
+      await new Promise(resolve => setTimeout(resolve, 200));
+    }
+
+    logger.info(`[TwentyCRM] Batch sync completed: ${results.successful} successful, ${results.failed} failed`);
+    return results;
+  }
+
+  /**
+   * Health check for Twenty CRM connection
+   */
+  async healthCheck(): Promise<boolean> {
+    try {
+      await this.client.get('/people');
+      logger.info('[TwentyCRM] Health check passed');
+      return true;
+    } catch (error) {
+      logger.error(`[TwentyCRM] Health check failed: ${error}`);
+      return false;
+    }
+  }
+
+  /**
+   * Get current data counts
+   */
+  async getDataCounts(): Promise<{ people: number; companies: number; leads: number }> {
+    try {
+      const [peopleRes, companiesRes, leadsRes] = await Promise.all([
+        this.client.get('/people'),
+        this.client.get('/companies'),
+        this.client.get('/leadsLinkedinScrapings'),
+      ]);
+
+      return {
+        people: peopleRes.data.data.people?.length || 0,
+        companies: companiesRes.data.data.companies?.length || 0,
+        leads: leadsRes.data.data.leadsLinkedinScrapings?.length || 0,
+      };
+    } catch (error) {
+      logger.error(`[TwentyCRM] Error getting data counts: ${error}`);
+      return { people: 0, companies: 0, leads: 0 };
+    }
+  }
+}
+
+// Singleton instance
+let twentyCrmService: TwentyCrmService | null = null;
+
+export function getTwentyCrmService(): TwentyCrmService {
+  if (!twentyCrmService) {
+    const apiKey = process.env.TWENTY_API_KEY;
+    if (!apiKey) {
+      throw new Error('TWENTY_API_KEY environment variable is required');
+    }
+    twentyCrmService = new TwentyCrmService(apiKey);
+  }
+  return twentyCrmService;
+}

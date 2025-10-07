@@ -1,0 +1,21 @@
+🚀 Starting LinkedIn Hiring Posts Scraper
+📊 Config: Max 100 posts, Query: "hiring OR "we're hiring" OR recruiting OR "join our team" OR "looking for" (software OR engineer OR developer)"
+✓ Connected to MongoDB
+✓ Created campaign: 68e004b19773e2b8056fcf7f
+🌐 Launching Chrome with existing profile...
+browserType.launchPersistentContext: Failed to create a ProcessSingleton for your profile directory. This usually means that the profile is already in use by another instance of Chromium.
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --enable-unsafe-swiftshader --no-sandbox --user-data-dir=/Users/mohanpraneeth/Library/Application Support/Google/Chrome --remote-debugging-pipe about:blank[22m
+[2m  - <launched> pid=28199[22m
+[2m  - [pid=28199][err] [28199:1310232:1003/224530.223071:ERROR:chrome/browser/process_singleton_posix.cc:340] Failed to create /Users/mohanpraneeth/Library/Application Support/Google/Chrome/SingletonLock: File exists (17)[22m
+[2m  - [pid=28199][err] [28199:1310232:1003/224530.224415:ERROR:chrome/app/chrome_main_delegate.cc:505] Failed to create a ProcessSingleton for your profile directory. This means that running multiple instances would start multiple browser processes rather than opening a new window in the existing process. Aborting now to avoid profile corruption.[22m
+[2m  - [pid=28199] <gracefully close start>[22m
+[2m  - [pid=28199] <kill>[22m
+[2m  - [pid=28199] <will force kill>[22m
+[2m  - [pid=28199] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=28199] <process did exit: exitCode=21, signal=null>[22m
+[2m  - [pid=28199] starting temporary directories cleanup[22m
+[2m  - [pid=28199] finished temporary directories cleanup[22m
+[2m  - [pid=28199] <gracefully close end>[22m
+
+    at async scrapeHiringPosts (/Users/mohanpraneeth/Desktop/Coding/crawlee/scripts/linkedin-hiring-runner.js:232:19)

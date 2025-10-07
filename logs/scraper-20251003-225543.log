@@ -1,0 +1,902 @@
+🚀 Starting LinkedIn Hiring Posts Scraper
+📊 Config: Max 100 posts, Query: "hiring OR "we're hiring" OR recruiting OR "join our team" OR "looking for" (software OR engineer OR developer)"
+✓ Connected to MongoDB
+✓ Created campaign: 68e00718ca213b4bfaebaa37
+🌐 Launching Chrome with dedicated profile...
+📁 Profile: /Users/mohanpraneeth/Desktop/Coding/crawlee/.playwright-chrome-profile
+
+⚠️  IMPORTANT: If this is your first run, Chrome will open.
+   You need to manually log into LinkedIn in the browser window.
+   After logging in, the script will continue automatically.
+
+✓ Browser ready
+🔍 Navigating to search: https://www.linkedin.com/search/results/content/?keywords=hiring%20OR%20%22we're%20hiring%22%20OR%20recruiting%20OR%20%22join%20our%20team%22%20OR%20%22looking%20for%22%20(software%20OR%20engineer%20OR%20developer)&datePosted="past-week"&sortBy="date_posted"
+📄 Found 0 posts on page
+
+📜 Scrolling to load more posts...
+📄 Found 4 posts on page
+
+📝 Processing post 1/100
+   Author: undefined
+   Text preview: Archroma Color Management is hiring! 
+hashtag
+#color 
+hashtag
+#colour 
+hashtag
+#archroma 
+hashtag
+#c...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (1 total)
+
+📝 Processing post 2/100
+   Author: undefined
+   Text preview: hashtag
+#BCE is now hiring a Upholstery Production Specialist at our Oregon, Wi location. This posit...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (2 total)
+      Jobs: Upholstery Production Specialist
+      Locations: Oregon, Wi
+
+📝 Processing post 3/100
+   Author: undefined
+   Text preview: We are hiring two postdoctoral researchers at Kadir Has University in Istanbul to join our NODDS gro...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (3 total)
+      Jobs: Postdoctoral Researcher 1, Postdoctoral Researcher 2
+      Locations: Istanbul
+
+📝 Processing post 4/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Multiple Positions - Fire Control Specialist Apply here: https://lnkd.in/dnaAC2wf 13...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (4 total)
+      Jobs: Fire Control Specialist
+
+📜 Scrolling to load more posts...
+📄 Found 9 posts on page
+
+📝 Processing post 5/100
+   Author: undefined
+   Text preview: 🚨 We’re Hiring! 🚨
+Secretary / Administrative Assistant
+📍 Location: Dokki – HSE Contractors, Inc. ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (5 total)
+      Jobs: Secretary, Administrative Assistant
+      Locations: Dokki
+
+📝 Processing post 6/100
+   Author: undefined
+   Text preview: Hi Hiring Team!
+
+I am looking for a full time - based job opportunity for a management - Operations ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (6 total)
+      Jobs: Management - Operations, Operations roles
+      Locations: Patna, New Delhi
+
+📝 Processing post 7/100
+   Author: undefined
+   Text preview: Vinay N 
+
+Hiring for -
+Gosree Finance Limited 
+
+Designation: 
+
+Branch Manager : Hyderabad, Vijayawad...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (7 total)
+      Jobs: Branch Manager
+      Locations: Hyderabad, Vijayawada, Visakhapatnam, Mysore
+
+📝 Processing post 8/100
+   Author: undefined
+   Text preview: Michelle N. Phillips, CFE, CIG, CPO is 
+hashtag
+#hiring. Know anyone who might be interested? Come w...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (8 total)
+      Locations: City
+
+📝 Processing post 9/100
+   Author: undefined
+   Text preview: Steven McDonagh is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (9 total)
+      Jobs: Senior Property Recruiter, Property Sales & New Home Sales Specialist
+
+📜 Scrolling to load more posts...
+📄 Found 14 posts on page
+
+📝 Processing post 10/100
+   Author: undefined
+   Text preview: 10 things I’d do if I had to start a tax or accounting firm from scratch (today):
+
+1️⃣ Build with wo...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (10 total)
+
+📝 Processing post 11/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (11 total)
+
+📝 Processing post 12/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (12 total)
+
+📝 Processing post 13/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (13 total)
+
+📝 Processing post 14/100
+   Author: undefined
+   Text preview: 📢 BÚSQUEDA LABORAL
+Administrativo/a de Obra (San Andrés – Buenos Aires)
+
+Nos encontramos en la búsq...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (14 total)
+      Jobs: Administrativo/a de Obra
+      Locations: San Andrés – Buenos Aires
+
+📜 Scrolling to load more posts...
+📄 Found 17 posts on page
+
+📝 Processing post 15/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (15 total)
+
+📝 Processing post 16/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (16 total)
+
+📝 Processing post 17/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (17 total)
+
+📜 Scrolling to load more posts...
+📄 Found 20 posts on page
+
+📝 Processing post 18/100
+   Author: undefined
+   Text preview: hashtag
+#URGENT 
+hashtag
+#HIRING 
+hashtag
+#INTERNS FOR 
+hashtag
+#INTERNSHIP 
+hashtag
+#PROGRAM!! 
+
+Ro...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (18 total)
+      Jobs: Artificial Intelligence, Data Analyst (Power BI), Web Development, Frontend Developer
+      Locations: Remote
+
+📝 Processing post 19/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (19 total)
+
+📝 Processing post 20/100
+   Author: undefined
+   Text preview: hashtag
+#LeadGeneration hashtag#DigitalMarketing hashtag#Marketing hashtag#B2BMarketing hashtag#Sale...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (20 total)
+
+📜 Scrolling to load more posts...
+📄 Found 23 posts on page
+
+📝 Processing post 21/100
+   Author: undefined
+   Text preview: Deepika T. is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (21 total)
+      Jobs: Engineering, Information technology, Supply chain
+
+📝 Processing post 22/100
+   Author: undefined
+   Text preview: Position: Manager Internal Audit
+Location: Lahore
+Company: Uniworth
+
+Job Description:
+Oversee and le...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (22 total)
+      Jobs: Manager Internal Audit
+      Locations: Lahore
+
+📝 Processing post 23/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Gestionnaire de compte Apply here: https://lnkd.in/dZcsY7cs Who We Are: At OPENLANE ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (23 total)
+      Jobs: Gestionnaire de compte
+      Locations: 
+
+📜 Scrolling to load more posts...
+📄 Found 26 posts on page
+
+📝 Processing post 24/100
+   Author: undefined
+   Text preview: Reflecting on my first week of Antler residency program in Austin its been a great week for Zeeda an...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (24 total)
+
+📝 Processing post 25/100
+   Author: undefined
+   Text preview: We are 
+hashtag
+#hiring in Cincinnati. Know anyone who may be interested? Please contact me to learn...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (25 total)
+      Jobs: Manager of Lateral Recruiting
+      Locations: Cincinnati
+
+📝 Processing post 26/100
+   Author: undefined
+   Text preview: Corgan is hiring in Abilene! We're expanding our team and seeking professionals at all levels to joi...
+   🤖 Extracting lead details with AI...
+Error extracting lead: Unexpected non-whitespace character after JSON at position 314
+   ⚠️ Could not extract lead information
+
+📜 Scrolling to load more posts...
+📄 Found 32 posts on page
+
+📝 Processing post 27/100
+   Author: undefined
+   Text preview: 🚨Hiring Alert!!🚨
+
+Due to internal promotion, I am searching for our next Store Manager at Men's We...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (26 total)
+      Jobs: Store Manager
+      Locations: Lakeland, FL
+
+📝 Processing post 28/100
+   Author: undefined
+   Text preview: Elevate your career with 
+hashtag
+#SAIC. Join us as a Directors Action Group Project Analyst in El S...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (27 total)
+      Jobs: Director's Action Group Project Analyst
+      Locations: El Segundo, CA
+
+📝 Processing post 29/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Assistant Store Manager - Spirit Apply here: https://lnkd.in/g7gs5ZD4 Hourly rate ra...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (28 total)
+      Jobs: Assistant Store Manager
+      Locations: Milwaukee, Wisconsin
+
+📝 Processing post 30/100
+   Author: undefined
+   Text preview: Now Hiring: Special Education Teachers – Harris County, TX!
+At Every Special Child (ESC), we believe...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (29 total)
+      Jobs: Special Education Teacher
+      Locations: Harris County, Texas
+
+📝 Processing post 31/100
+   Author: undefined
+   Text preview: Lack of Jobs Data Muddies View of Hiring, Economy 
+hashtag
+#Transportation 
+hashtag
+#TransportationN...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (30 total)
+
+📝 Processing post 32/100
+   Author: undefined
+   Text preview: 🚀 Hiring 🚀 
+
+We are looking candidates for our Client (Pharma Industry) for Production Department:...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (31 total)
+      Jobs: Sr. Officer, Executive Production
+      Locations: SITE II, Ahsanabad Karachi
+
+📜 Scrolling to load more posts...
+📄 Found 38 posts on page
+
+📝 Processing post 33/100
+   Author: undefined
+   Text preview: :
+
+🌊 We’re Hiring – Chef (Full-Time) 🌊
+
+Join our beach restaurant in Hiriketiya!
+We’re looking for...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (32 total)
+      Jobs: Chef
+      Locations: Hiriketiya, Matara, Tangalle
+
+📝 Processing post 34/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Senior Payroll Accountant Apply here: https://lnkd.in/gmfJNSHQ Focus Search LLC is r...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (33 total)
+      Jobs: Senior Payroll Accountant
+
+📝 Processing post 35/100
+   Author: undefined
+   Text preview: MAPA is hiring! We're looking for the next Minnesota asphalt industry leader to join our team. Sprea...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (34 total)
+      Jobs: Asphalt Industry Leader
+      Locations: Minnesota
+
+📝 Processing post 36/100
+   Author: undefined
+   Text preview: 🚀 We’re Hiring – Service Revenue Sales Professional
+
+Are you a dynamic, young professional with str...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (35 total)
+      Jobs: Service Revenue Sales Professional
+      Locations: Mumbai (Chembur)
+
+📝 Processing post 37/100
+   Author: undefined
+   Text preview: Red Leg Brewing Company is seeking a Craft Beverages Territory Manager to join our Brew Crew and sup...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (36 total)
+      Jobs: Craft Beverages Territory Manager
+      Locations: Colorado Springs
+
+📝 Processing post 38/100
+   Author: undefined
+   Text preview: Hiring: Finance & Grants Manager
+Africa Research & Impact Network (AFRIN) is seeking a Finance & Gra...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (37 total)
+      Jobs: Finance & Grants Manager
+      Locations: Nairobi, Kenya
+
+📜 Scrolling to load more posts...
+📄 Found 44 posts on page
+
+📝 Processing post 39/100
+   Author: undefined
+   Text preview: 💼 Esperto/a Paghe e Contributi cercasi!
+ 📍 Udine – contratto a tempo indeterminato, possibilità di...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (38 total)
+      Jobs: Esperto/a Paghe e Contributi
+      Locations: Udine
+
+📝 Processing post 40/100
+   Author: undefined
+   Text preview: My friend Ricky Ashenfelter at the great company Spoiler Alert is hiring a Growth Marketing Manager....
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (39 total)
+      Jobs: Growth Marketing Manager
+
+📝 Processing post 41/100
+   Author: undefined
+   Text preview: We’re Hiring: Investor Specialist
+Madison Professional Group is partnering with our client to hire a...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (40 total)
+      Jobs: Investor Specialist
+
+📝 Processing post 42/100
+   Author: undefined
+   Text preview: Hiring? Let’s Build Your Dream Team!
+Finding the right talent is key to long-term success. CFR speci...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (41 total)
+
+📝 Processing post 43/100
+   Author: undefined
+   Text preview: Progression of Agentic AI
+
+AI systems evolve through 5 stages, each reducing human dependency and in...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (42 total)
+
+📝 Processing post 44/100
+   Author: undefined
+   Text preview: 🚀 We’re Hiring – Service Revenue Sales Professional
+
+Are you a dynamic, young professional with str...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (43 total)
+      Jobs: Service Revenue Sales Professional
+      Locations: Mumbai (Chembur)
+
+📜 Scrolling to load more posts...
+📄 Found 47 posts on page
+
+📝 Processing post 45/100
+   Author: undefined
+   Text preview: 🚀 We’re Hiring – Treasury Accountant
+📍 Location: Maadi
+ 🕒 Working Hours: 10:00 AM – 6:00 PM
+Requi...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (44 total)
+      Jobs: Treasury Accountant
+      Locations: Maadi
+
+📝 Processing post 46/100
+   Author: undefined
+   Text preview: 🚨 Now Hiring: Research Analyst at the Center for Effective Philanthropy (CEP) 🚨
+Are you passionate...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (45 total)
+      Jobs: Research Analyst
+      Locations: San Francisco, CA
+
+📝 Processing post 47/100
+   Author: undefined
+   Text preview: Offre d’emploi ACF : Technicien Moyens Généraux (H/F), Burkina Faso
+
+Plus de détails 👉 https://lnkd...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (46 total)
+      Jobs: Technicien Moyens Généraux (H/F)
+      Locations: Burkina Faso
+
+📜 Scrolling to load more posts...
+📄 Found 53 posts on page
+
+📝 Processing post 48/100
+   Author: undefined
+   Text preview: I’m 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (47 total)
+
+📝 Processing post 49/100
+   Author: undefined
+   Text preview: Wilma Vlug is op zoek naar medewerkers (
+hashtag
+#hiring). Kent u iemand die misschien geïnteresseer...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (48 total)
+
+📝 Processing post 50/100
+   Author: undefined
+   Text preview: 📢 WE ARE HIRING – SALES OFFICERS
+
+✨ Join our growing team and success journey!
+
+📍 Locations:
+
+Chen...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (49 total)
+      Jobs: SALES OFFICER
+      Locations: Chennai, Kerala, Bangalore
+
+📝 Processing post 51/100
+   Author: undefined
+   Text preview: 🚀 We’re Hiring: Business Development Manager – B2B IT Sales at Matrix Bricks.
+
+Experience: 3–6 year...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (50 total)
+      Jobs: Senior Frontend Developer
+
+📝 Processing post 52/100
+   Author: undefined
+   Text preview: Big changes at Herk & Associates - Heavy Equipment Jobs!
+For the first time in our 27-year history, ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (51 total)
+      Jobs: Recruiter
+
+📝 Processing post 53/100
+   Author: undefined
+   Text preview: 🚀 Build Your Fintech Career !
+
+We’re hiring Customer Success Specialists (Hybrid) in KL for a leadi...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (52 total)
+      Jobs: Customer Success Specialists
+      Locations: Kuala Lumpur
+
+📜 Scrolling to load more posts...
+📄 Found 59 posts on page
+
+📝 Processing post 54/100
+   Author: undefined
+   Text preview: We’re Hiring Nurses Across the U.S.! 
+Looking for your next opportunity? SkillGigs connects nurses w...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (53 total)
+      Jobs: Nurse, Registered Nurse (RN)
+      Locations: United States
+
+📝 Processing post 55/100
+   Author: undefined
+   Text preview: Je 
+hashtag
+#recrute (
+hashtag
+#hiring). Connaissez-vous quelqu’un qui pourrait être intéressé ? 👋�...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (54 total)
+      Jobs: 
+      Locations: 
+
+📝 Processing post 56/100
+   Author: undefined
+   Text preview: We are hiring 
+hashtag
+#BIM_Engineers
+Project in Al- Sahel 🚨
+
+We need a Senior BIM Arch Engineer & ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (55 total)
+      Jobs: Senior BIM Arch Engineer, BIM Arch Team Leader
+      Locations: Al- Sahel
+
+📝 Processing post 57/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Manufacturing Operator Apply here: https://lnkd.in/gNnRyw9Q Job Title - Manufacturin...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (56 total)
+      Jobs: Manufacturing Operator
+      Locations: Indianapolis, IN
+
+📝 Processing post 58/100
+   Author: undefined
+   Text preview: We Are Hiring – *HR Executive*
+📍 Location: A-25, Main Bahadurabad, *Karachi*
+Age Requirement:
+👤 Ca...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (57 total)
+      Jobs: HR Executive
+      Locations: A-25, Main Bahadurabad, Karachi
+
+📝 Processing post 59/100
+   Author: undefined
+   Text preview: 🔍 We're Hiring: Radiology Interventional Technologist – Detroit, MI
+Are you a skilled Radiology Int...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (58 total)
+      Jobs: Radiology Interventional Technologist
+      Locations: Detroit, MI
+
+📜 Scrolling to load more posts...
+📄 Found 65 posts on page
+
+📝 Processing post 60/100
+   Author: undefined
+   Text preview: We’re Hiring: Mainframe Tester 🚨
+Location: Parsippany, NJ (Locals Preferred)
+
+Experience: 8–15 Year...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (59 total)
+      Jobs: Mainframe Tester
+      Locations: Parsippany, NJ
+
+📝 Processing post 61/100
+   Author: undefined
+   Text preview: Hiring across major law firms could look different under proposed H-1B lottery changes. In an articl...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (60 total)
+      Jobs: Entry-level Attorney, Foreign Law School LL.M. Graduates
+
+📝 Processing post 62/100
+   Author: undefined
+   Text preview: Speed-to-hire isn’t just efficiency - it’s security.
+
+
+hashtag
+#covenantconnectors 
+hashtag
+#Cyberse...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (61 total)
+
+📝 Processing post 63/100
+   Author: undefined
+   Text preview: Our Externship sponsor reports are going out this week and my team and I had a lot of "ah-ha" moment...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (62 total)
+
+📝 Processing post 64/100
+   Author: undefined
+   Text preview: I am excited to share that after my graduation this December, I will be joining Travelers Insurance ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (63 total)
+      Jobs: Commercial Accounts Underwriter
+      Locations: Clemson, South Carolina, Milwaukee, Wisconsin
+
+📝 Processing post 65/100
+   Author: undefined
+   Text preview: Hi Partners,
+Greetings!
+Urgent hiring for CLINICAL PROJECT MANAGER in NewYork City.
+MUST HAVE EPIC E...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (64 total)
+      Jobs: Clinical Project Manager
+      Locations: New York City
+
+📜 Scrolling to load more posts...
+📄 Found 71 posts on page
+
+📝 Processing post 66/100
+   Author: undefined
+   Text preview: Esses dias o LinkedIn me perguntou se eu estava contratando, se queria colocar o selo de 
+hashtag
+#H...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (65 total)
+
+📝 Processing post 67/100
+   Author: undefined
+   Text preview: "We’re hiring more bilingual associates, and it’s improving communication and collaboration across t...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (66 total)
+      Jobs: bilingual associate
+
+📝 Processing post 68/100
+   Author: undefined
+   Text preview: 🚨 WE'RE HIRING 🚨
+
+Job Title: Executive Assistant 
+
+Location: Remote, but you must be based in Lago...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (67 total)
+      Jobs: Executive Assistant
+      Locations: Remote, Lagos, Nigeria
+
+📝 Processing post 69/100
+   Author: undefined
+   Text preview: 📢 We’re Hiring! | 
+hashtag
+#DoubtFaculty for PW 
+hashtag
+#PathshalaCentre
+Join us in our mission to...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (68 total)
+      Jobs: Associate Manager - Human Resources, Physics – JEE/NEET
+      Locations: PAN India
+
+📝 Processing post 70/100
+   Author: undefined
+   Text preview: As the sun officially sets on summer, discover how 
+hashtag
+#TeamBC is sparking lasting, positive ch...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (69 total)
+      Jobs: engineering, internship
+      Locations: Irvine, Los Angeles, San Diego, Atlanta, Boston, Vancouver, Maui, Charlotte, Houston, Virginia Beach, St. Paul, New York City, Syracuse, Boston, Andover
+
+📝 Processing post 71/100
+   Author: undefined
+   Text preview: 🧩 Deep Learning Engineer — Build next-generation AI models
+
+NeuroVector Systems is hiring a Deep Le...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (70 total)
+      Jobs: Deep Learning Engineer
+
+📜 Scrolling to load more posts...
+📄 Found 74 posts on page
+
+📝 Processing post 72/100
+   Author: undefined
+   Text preview: 🚀 Hello LinkedIn community!
+I'm currently open to new opportunities and actively looking for a role...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (71 total)
+      Jobs: L2 / L3 Application Support Engineer, Site Reliability Engineer (SRE), System Administrator
+      Locations: Mexico (Toluca or CDMX)
+
+📝 Processing post 73/100
+   Author: undefined
+   Text preview: hashtag
+#Hiring 
+hashtag
+#EngineeringJobs 
+hashtag
+#PlumbingEngineer 
+hashtag
+#HVACEngineer 
+hashtag...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (72 total)
+      Jobs: HR Assistant, Administrative Assistant, Office Manager, Training Coordinator, Assistant Trainer, Virtual Assistance, Remote Admin Support
+      Locations: New Cairo, Maadi
+
+📝 Processing post 74/100
+   Author: undefined
+   Text preview: In mid-September, Lincoln International announced its planned acquisition of MarshBerry, a premier a...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (73 total)
+      Jobs: Managing Director
+      Locations: France, London
+
+📜 Scrolling to load more posts...
+📄 Found 80 posts on page
+
+📝 Processing post 75/100
+   Author: undefined
+   Text preview: We're hiring! Read about our latest job opening here: CF Speech Language Pathologist - https://bit.l...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (74 total)
+      Jobs: CF Speech Language Pathologist
+
+📝 Processing post 76/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Staff - Medical ICU Nurse Manager - $40-60 per hour Apply here: https://lnkd.in/gD86...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (75 total)
+      Jobs: Medical ICU Nurse Manager
+      Locations: Dallas, Texas
+
+📝 Processing post 77/100
+   Author: undefined
+   Text preview: L1 Visa education: Each year companies have an abroad bid for their open American JOBs within their ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (76 total)
+      Jobs: Programmer, Engineer
+      Locations: United States
+
+📝 Processing post 78/100
+   Author: undefined
+   Text preview: 💥 *LTS is hiring Hotel Survey Specialists – USA Account!* 
+💰 *Salary: 12K + 2K KPIs + uncapped com...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (77 total)
+      Jobs: Hotel Survey Specialists
+      Locations: Egypt
+
+📝 Processing post 79/100
+   Author: undefined
+   Text preview: Hi Team,
+
+We’re excited to announce mass hiring for AR roles across multiple locations. 🚀
+
+🔹 Open ...
+   🤖 Extracting lead details with AI...
+   ❌ Database error: LinkedInLead validation failed: seniority: Cast to string failed for value "[ 'Lead', 'Manager' ]" (type Array) at path "seniority"
+
+📝 Processing post 80/100
+   Author: undefined
+   Text preview: Top 10 Growing Tech Companies - September 9, 2025🚀 The tech hiring market is HOT this week! Here ar...
+   🤖 Extracting lead details with AI...
+Error extracting lead: Unexpected non-whitespace character after JSON at position 235
+   ⚠️ Could not extract lead information
+
+📜 Scrolling to load more posts...
+📄 Found 86 posts on page
+
+📝 Processing post 81/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Travel Nurse RN - Med Surg - $1,575 per week Apply here: https://lnkd.in/gCRnHn-R Cr...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (78 total)
+      Jobs: Travel Nurse RN - Med Surg
+      Locations: Nashville, Tennessee
+
+📝 Processing post 82/100
+   Author: undefined
+   Text preview: 🌐 We’re Hiring – Multiple Remote Opportunities!
+
+Our team is growing, and we’re opening up several ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (79 total)
+      Locations: Remote
+
+📝 Processing post 83/100
+   Author: undefined
+   Text preview: hashtag
+#hiring...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (80 total)
+
+📝 Processing post 84/100
+   Author: undefined
+   Text preview: Why wait until January to fill critical roles — when everyone else is competing for the same talent?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (81 total)
+
+📝 Processing post 85/100
+   Author: undefined
+   Text preview: hashtag
+#hiring Cardiology Physician Apply here: https://lnkd.in/gf7dKqrn Nurse Practitioner Needed ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (82 total)
+      Jobs: Nurse Practitioner
+      Locations: Salem, Oregon
+
+📝 Processing post 86/100
+   Author: undefined
+   Text preview: Aalok Shah is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (83 total)
+
+📜 Scrolling to load more posts...
+📄 Found 92 posts on page
+
+📝 Processing post 87/100
+   Author: undefined
+   Text preview: Jimmie Norman, CHTM, CBET is 
+hashtag
+#hiring. Know anyone who might be interested?...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (84 total)
+
+📝 Processing post 88/100
+   Author: undefined
+   Text preview: We are hiring! 🧶🚀...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (85 total)
+
+📝 Processing post 89/100
+   Author: undefined
+   Text preview: Certified Full stack developer is Unlocked 🔓 
+
+I just earned my Full Stack Developer Certification ...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (86 total)
+      Jobs: Full Stack Developer, Junior Developer, Data Visualization Intern, AI Engineer
+
+📝 Processing post 90/100
+   Author: undefined
+   Text preview: 1,500 students. One message. Unlimited potential ⬆️
+
+Southwestern Illinois College Manufacturing Day...
+   🤖 Extracting lead details with AI...
+   ✅ Lead saved! (87 total)
+      Jobs: CNC Programmer, Robotics Technician, Welding Specialist, Shop Owner, Leader
+      Locations: Detroit, Texas, Pennsylvania, California, Ohio

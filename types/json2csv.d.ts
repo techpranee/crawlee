@@ -12,5 +12,17 @@ declare module 'json2csv' {
     constructor(options?: TransformOptions);
   }
 
-  export { Transform, TransformOptions };
+  interface ParserOptions {
+    fields?: string[];
+    defaultValue?: string;
+    flatten?: boolean;
+    withBOM?: boolean;
+  }
+
+  class Parser {
+    constructor(options?: ParserOptions);
+    parse(data: any): string;
+  }
+
+  export { Transform, TransformOptions, Parser, ParserOptions };
 }

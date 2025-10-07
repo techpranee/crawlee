@@ -15,6 +15,7 @@ import { createSettingsRouter } from './routes/settings';
 import { createBrowserCaptureRouter } from './routes/browserCapture';
 import { createAuthRouter } from './routes/auth';
 import adminRouter from './routes/admin';
+import linkedInRouter from './routes/linkedin';
 import { tenantMiddleware } from './middleware/tenant';
 import { httpLogger } from './utils/logger';
 import { getMetricsRegistry, isReady } from './utils/metrics';
@@ -73,6 +74,7 @@ export function createApp({ agenda }: AppDependencies) {
   apiRouter.use('/browser', createBrowserCaptureRouter());
   apiRouter.use('/auth', createAuthRouter());
   apiRouter.use('/admin', adminRouter);
+  apiRouter.use('/linkedin', linkedInRouter);
 
   app.use('/api', apiRouter);
 

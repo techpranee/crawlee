@@ -1,0 +1,25 @@
+LinkedIn Hiring Scraper - Performance Report
+===========================================
+
+Test Run: 2025-10-03 22:47:50
+Tenant ID: perf-test-20251003-224739
+
+Timing
+------
+Start Time:  2025-10-03 22:47:39
+End Time:    2025-10-03 22:47:50
+Duration:    0m 11s (11 seconds)
+
+Configuration
+-------------
+Max Posts: 100
+Search Query: hiring OR recruiting (software/engineer/developer)
+Time Filter: past-week
+
+Results
+-------
+Leads Extracted: 
+Exit Code: 1
+
+Performance Metrics
+------------------

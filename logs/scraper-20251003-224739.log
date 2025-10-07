@@ -1,0 +1,14 @@
+🚀 Starting LinkedIn Hiring Posts Scraper
+📊 Config: Max 100 posts, Query: "hiring OR "we're hiring" OR recruiting OR "join our team" OR "looking for" (software OR engineer OR developer)"
+✓ Connected to MongoDB
+✓ Created campaign: 68e0053401e101c42c169491
+🌐 Launching Chrome with dedicated profile...
+📁 Profile: /Users/mohanpraneeth/Library/Application Support/Google/Chrome/LinkedIn-Scraper-Profile
+
+⚠️  IMPORTANT: If this is your first run, Chrome will open.
+   You need to manually log into LinkedIn in the browser window.
+   After logging in, the script will continue automatically.
+
+✓ Browser ready
+🔍 Navigating to search: https://www.linkedin.com/search/results/content/?keywords=hiring%20OR%20%22we're%20hiring%22%20OR%20recruiting%20OR%20%22join%20our%20team%22%20OR%20%22looking%20for%22%20(software%20OR%20engineer%20OR%20developer)&datePosted=%22past-week%22&sortBy=%22date_posted%22
+❌ Not logged in! Please log in to LinkedIn in Chrome first.

@@ -2,7 +2,6 @@ import { pipeline } from 'node:stream/promises';
 import { Transform } from 'node:stream';
 
 import { Types } from 'mongoose';
-// @ts-expect-error json2csv does not ship TypeScript definitions
 import { Transform as CsvTransform } from 'json2csv';
 // @ts-expect-error parquetjs-lite does not ship TypeScript definitions
 import { ParquetSchema, ParquetWriter } from 'parquetjs-lite';

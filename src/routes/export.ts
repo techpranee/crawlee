@@ -1,7 +1,6 @@
 import { Router, type Request } from 'express';
 import { pipeline } from 'node:stream/promises';
 import { Transform as StreamTransform } from 'node:stream';
-// @ts-expect-error json2csv does not ship TypeScript definitions
 import { Transform as CsvTransform } from 'json2csv';
 import { Types } from 'mongoose';
 
